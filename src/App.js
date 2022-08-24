@@ -62,7 +62,7 @@ function App() {
 
   const handleLastJobs = () => {
     const filteredLast7DaysJobs = jobs.filter((job) => {
-      if (new RegExp("[1-2]d ago").test(job.postedDate)) return job;
+      if (new RegExp("[1-7]d ago").test(job.postedDate)) return job;
       return false;
     });
 
